@@ -1,10 +1,12 @@
-# Glaucoma Detection via Few-Shot Segmentation and Prototypical Learning
+# Few-Shot Learning-Based Glaucoma Detection System
 
 
 📌 Overview
+
 This project proposes a data-efficient and interpretable pipeline for glaucoma detection using few-shot segmentation and prototype-based classification. The framework mimics the clinical workflow by segmenting key anatomical biomarkers — the optic disc (OD), optic cup (OC), and retinal blood vessels — and combines them with raw fundus images to classify as Normal or Glaucoma. The system leverages the strengths of Prototypical Networks, attention mechanisms, and ConvNeXt-based backbones for robust performance in low-resource settings.
 
 🧰 Tech Stack
+
 Python
 
 PyTorch – Deep learning framework
@@ -20,6 +22,7 @@ LaTeX – Report generation
 Overleaf – Paper writing
 
 📂 Dataset Used
+
 REFUGE, ORIGA – For optic disc & cup segmentation
 
 FIVES, RBVS – For blood vessel segmentation
@@ -27,6 +30,7 @@ FIVES, RBVS – For blood vessel segmentation
 LAG, AIROGS – For classification and evaluation
 
 🧠 Methodology
+
 🧩 1. Few-Shot Segmentation
 Two separate Prototypical Networks:
 
