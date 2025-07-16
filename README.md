@@ -36,45 +36,45 @@ LAG, AIROGS – For classification and evaluation
 
 1. Few-Shot Segmentation
    
-Two separate Prototypical Networks:
-
-OC/OD segmentation using masked average pooling.
-
-Blood vessel segmentation using Proto-UNet.
-
-Trained with <10 annotated support images per class.
+   Two separate Prototypical Networks:
+   
+   OC/OD segmentation using masked average pooling.
+   
+   Blood vessel segmentation using Proto-UNet.
+   
+   Trained with <10 annotated support images per class.
 
 2. Mask-Based Fusion
    
-Segmentation outputs are overlaid and stacked with raw fundus images to form 3-channel composite inputs.
+   Segmentation outputs are overlaid and stacked with raw fundus images to form 3-channel composite inputs.
 
 3. Classification
    
-A ConvNeXt-based classifier with attention receives these composite inputs.
+   A ConvNeXt-based classifier with attention receives these composite inputs.
 
-Trained in a Prototypical Network-style episodic learning setup.
+   Trained in a Prototypical Network-style episodic learning setup.
 
 
 📊 Evaluation Metrics
 
-Accuracy, ROC AUC, Precision, Recall, F1-Score, Sensitivity, Specificity
+   Accuracy, ROC AUC, Precision, Recall, F1-Score, Sensitivity, Specificity
 
-Dice Coefficient and IoU for segmentation
+   Dice Coefficient and IoU for segmentation
 
 
 Ablation Study: Evaluates performance across input configurations:
 
-A1: Image + Masks (Proposed)
-
-A2: Masks Only
-
-A3: Image Only
-
-📌 Results Summary
-Input  Config   	   Accuracy 	ROC AUC	  F1-Score
-A1    (Proposed)	    0.7150	  0.7705	  0.7150
-A2    (Masks Only)	  0.6030	  0.6496	  0.6030
-A3    (Image Only)	  0.5780    0.5938    0.5779
+   A1: Image + Masks (Proposed)
+   
+   A2: Masks Only
+   
+   A3: Image Only
+   
+   📌 Results Summary
+   Input  Config   	   Accuracy 	ROC AUC	  F1-Score
+   A1    (Proposed)	    0.7150	  0.7705	  0.7150
+   A2    (Masks Only)	  0.6030	  0.6496	  0.6030
+   A3    (Image Only)	  0.5780    0.5938    0.5779
 
 
 📜 Conclusion
