@@ -57,7 +57,7 @@ LAG, AIROGS – For classification and evaluation
 
 📊 Evaluation Metrics
 
-   Accuracy, ROC AUC, Precision, Recall, F1-Score, Sensitivity, Specificity
+   Accuracy, ROC AUC, Precision, Recall, F1-Score
 
    Dice Coefficient and IoU for segmentation
 
