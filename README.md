@@ -70,11 +70,11 @@ Ablation Study: Evaluates performance across input configurations:
    
    A3: Image Only
    
-   📌 Results Summary
+   📌### Results Summary
    Input  Config   	   Accuracy 	ROC AUC	  F1-Score
-   A1    (Proposed)	    0.7150	  0.7705	  0.7150
-   A2    (Masks Only)	  0.6030	  0.6496	  0.6030
-   A3    (Image Only)	  0.5780    0.5938    0.5779
+   A1    (Proposed)	     0.7150	   0.7705	  0.7150
+   A2    (Masks Only)	  0.6030	   0.6496	  0.6030
+   A3    (Image Only)	  0.5780    0.5938     0.5779
 
 
 📜 Conclusion
